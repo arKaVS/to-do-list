@@ -1,4 +1,4 @@
-import "../styles/TodoItem.css";
+import "./styles/TodoItem.css";
 
 function TodoItem({ task, deleteTask, toggleTask }) {
   return (
