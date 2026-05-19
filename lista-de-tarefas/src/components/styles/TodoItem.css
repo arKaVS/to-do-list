@@ -11,7 +11,7 @@
 }
 
 .todo-item span {
-  color: #5E503F;
+  color: #334e5a;
   cursor: pointer;
   font-size: 16px;
   max-width: 300px;
@@ -25,7 +25,7 @@
 
 .todo-item .completed {
   text-decoration: line-through;
-  color: #2e271f;
+  color: #21323a;
 }
 
 .todo-item button {
