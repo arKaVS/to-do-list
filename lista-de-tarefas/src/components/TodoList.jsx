@@ -1,5 +1,5 @@
 import TodoItem from "./TodoItem";
-import "../styles/TodoList.css";
+import "./styles/TodoList.css";
 
 function TodoList({ tasks, deleteTask, toggleTask }) {
   return (
