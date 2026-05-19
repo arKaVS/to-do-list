@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/TodoForm.css";
+import "./styles/TodoForm.css";
 
 function TodoForm({ addTask }) {
   const [input, setInput] = useState("");
