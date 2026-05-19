@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 .todo-item {
   display: flex;
   justify-content: space-between;
@@ -5,17 +7,21 @@
   background-color: #f3f4f6;
   padding: 12px;
   border-radius: 8px;
+  
 }
 
 .todo-item span {
+  color: #5E503F;
   cursor: pointer;
   font-size: 16px;
   max-width: 300px;
+  font-family: 'SUSE Mono', sans-serif;
+  font-weight: 500;
 }
 
 .todo-item .completed {
   text-decoration: line-through;
-  color: #5E503F;
+  color: #2e271f;
 }
 
 .todo-item button {
