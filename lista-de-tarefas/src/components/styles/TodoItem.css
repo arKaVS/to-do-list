@@ -10,11 +10,12 @@
 .todo-item span {
   cursor: pointer;
   font-size: 16px;
+  max-width: 300px;
 }
 
 .todo-item .completed {
   text-decoration: line-through;
-  color: gray;
+  color: #5E503F;
 }
 
 .todo-item button {
