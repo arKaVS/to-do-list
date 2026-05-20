@@ -4,11 +4,16 @@ import "./styles/TodoList.css";
 
 function TodoList({ tasks, deleteTask, toggleTask }) {
   const bottomRef = useRef(null);
+  const previousLength = useRef(tasks.length);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (tasks.length > previousLength.current) {
+      bottomRef.current?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    previousLength.current = tasks.length;
   }, [tasks]);
 
   return (
