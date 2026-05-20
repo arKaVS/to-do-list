@@ -29,14 +29,17 @@
 }
 
 .todo-item button {
-  border: none;
-  background-color: #ef4444;
+  border: 3px solid transparent;
+  background-color: #b91c1c;
   color: white;
   padding: 8px 10px;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .todo-item button:hover {
-  background-color: #b91c1c;
+  border: 3px solid #b91c1c;
+  background-color: #ee5050;
+  transform: scale(1.02);
 }
