@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 8px;
+  
+}
+
+.todo-item span {
+  color: #334e5a;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 300px;
+  font-family: 'SUSE Mono', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  transition: 0.4s;
+}
+
+.todo-item span:hover {
+  transform: scale(1.01);
+  color: #548397;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+  color: #21323a;
+}
+
+.todo-item button {
+  border: 3px solid transparent;
+  background-color: #b91c1c;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.todo-item button:hover {
+  border: 3px solid #b91c1c;
+  background-color: #ee5050;
+  transform: scale(1.02);
+}
