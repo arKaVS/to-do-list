@@ -21,6 +21,12 @@
   max-width: 100%;
   overflow-wrap: break-word;
   word-break: break-all;
+  transition: 0.4s;
+}
+
+.todo-item span:hover {
+  transform: scale(1.01);
+  color: #548397;
 }
 
 .todo-item .completed {
