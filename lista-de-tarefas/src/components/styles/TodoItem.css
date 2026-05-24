@@ -51,7 +51,7 @@
 .remove-btn {
   border: 3px solid transparent;
   background-color: #b91c1c;
-  color: white;
+  color: #EAE0D5;
   padding: 8px 10px;
   border-radius: 6px;
   cursor: pointer;
@@ -66,8 +66,8 @@
 
 .description-btn {
   border: 3px solid transparent;
-  background-color: #2563eb;
-  color: white;
+  background-color: #334e5a;
+  color: #EAE0D5;
   padding: 8px 10px;
   border-radius: 6px;
   cursor: pointer;
@@ -75,8 +75,8 @@
 }
 
 .description-btn:hover {
-  border: 3px solid #2563eb;
-  background-color: #1d4ed8;
+  border: 3px solid #334e5a;
+  background-color: #548397;
   transform: scale(1.02);
 }
 
