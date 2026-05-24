@@ -86,11 +86,19 @@
   resize: vertical;
 
   padding: 10px;
-
   border: 2px solid #ccc;
   border-radius: 8px;
+  color: #334e5a;
+  font-family: 'SUSE Mono', sans-serif;
+  transition: 0.3s;
 
   font-size: 14px;
+}
+
+.description-input:focus-visible {
+  border: 2px solid #334e5a;
+  outline: 0px;
+  transform: scale(1.01);
 }
 
 .description-input::-webkit-scrollbar {
