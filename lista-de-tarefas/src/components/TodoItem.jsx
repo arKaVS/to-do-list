@@ -1,11 +1,9 @@
 import { useState } from "react";
 import "./styles/TodoItem.css";
 
-function TodoItem({ task, deleteTask, toggleTask }) {
+function TodoItem({ task, deleteTask, toggleTask, updateDescription }) {
   const [showDescription, setShowDescription] =
     useState(false);
-
-  const [description, setDescription] = useState("");
 
   return (
     <div className="todo-item">
@@ -41,9 +39,12 @@ function TodoItem({ task, deleteTask, toggleTask }) {
           <textarea
             className="description-input"
             placeholder="Digite uma descrição..."
-            value={description}
+            value={task.description || ""}
             onChange={(e) =>
-              setDescription(e.target.value)
+              updateDescription(
+                task.id,
+                e.target.value
+              )
             }
           />
         )}
