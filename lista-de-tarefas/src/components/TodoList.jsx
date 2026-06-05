@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import TodoItem from "./TodoItem";
 import "./styles/TodoList.css";
 
-function TodoList({ tasks, deleteTask, toggleTask }) {
+function TodoList({ tasks, deleteTask, toggleTask, updateDescription }) {
   const bottomRef = useRef(null);
   const previousLength = useRef(tasks.length);
 
@@ -27,6 +27,7 @@ function TodoList({ tasks, deleteTask, toggleTask }) {
             task={task}
             deleteTask={deleteTask}
             toggleTask={toggleTask}
+            updateDescription={updateDescription}
           />
         ))
       )}
